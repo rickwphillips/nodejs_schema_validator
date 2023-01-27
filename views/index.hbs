@@ -1,8 +1,49 @@
 <div class="jumbotron">
     <div class="container">
         <h1>{{title}}</h1>
-        <p>Welcome to {{title}}</p>
-
+        <p>{{description}}</p>
     </div>
 </div>
+<div class="container d-flex justify-content-center">
+    <div class="card lg-w-75">
+        <div class="card-body">
+            <h5 class="card-subtitle">Upload one or more JSON files or provide a URL for validation</h5>
+
+            <div class="row m-4">
+                <label for="basic-url">Valid JSON file location</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">URL</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon3">Validate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center muted">
+                <h5>- Or -</h5>
+            </div>
+
+            <div class="row m-4">
+                <label for="inputGroupFile">Upload a JSON file(s)</label>
+                <div class="input-group mb-3">
+
+                    <div class="custom-file">
+                        <label class="custom-file-label" for="inputGroupFile">Choose file</label>
+                        <input type="file" class="custom-file-input" id="inputGroupFile"x
+                               aria-describedby="inputGroupFileAddon"
+                        onchange="">
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary"
+                                type="button" id="inputGroupFileAddon">Validate
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
